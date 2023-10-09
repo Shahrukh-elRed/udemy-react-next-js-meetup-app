@@ -23,7 +23,7 @@ function MeetupDetails(props) {
 
 export async function getStaticPaths() {
   const client = await MongoClient.connect(
-    "mongodb+srv://mongodb+srv://shahrukh:CTj9uVHvF3tr7mqG>@cluster0.lz28xro.mongodb.net/?retryWrites=true&w=majority"
+    "mongodb+srv://shahrukh:8rAHhp0hDm9rxHuM@cluster0.lz28xro.mongodb.net/?retryWrites=true&w=majority"
   );
   const db = client.db();
 
@@ -47,7 +47,7 @@ export async function getStaticProps(context) {
   const meetupId = context.params.meetupId;
 
   const client = await MongoClient.connect(
-    "mongodb+srv://mongodb+srv://shahrukh:CTj9uVHvF3tr7mqG>@cluster0.lz28xro.mongodb.net/?retryWrites=true&w=majority"
+    "mongodb+srv://shahrukh:8rAHhp0hDm9rxHuM@cluster0.lz28xro.mongodb.net/?retryWrites=true&w=majority"
   );
   const db = client.db();
 
